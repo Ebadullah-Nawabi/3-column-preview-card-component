@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@400;500&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 62.5% = 10px of 16px */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0, 0%, 95%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 60%;
+}
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.card {
+  padding: 4.8rem;
+}
+
+.icon {
+  display: block;
+  margin-bottom: 3.6rem;
+}
+
+.card-title {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  margin-bottom: 3.6rem;
+}
+
+.card-text {
+  font-size: 1.5rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.6;
+}
+
+.card-btn {
+  display: inline-block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  background-color: hsl(0, 0%, 95%);
+  padding: 1.4rem 2.8rem;
+  border-radius: 100px;
+  font-weight: 500;
+  margin-top: 7.2rem;
+  border: 1px solid hsl(0, 0%, 95%);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card-btn:hover,
+.card-btn:active {
+  background-color: inherit;
+  color: hsl(0, 0%, 95%);
+  font-weight: 400;
+}
+
+.card-1 {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.card-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card-3 {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.btn-1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn-2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn-3 {
+  color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 1440px) {
+  .btn-3 {
+    margin-top: 4.8rem;
+  }
+}
+
+@media (max-width: 544px) {
+  .container {
+    max-width: 90%;
+    margin: 5rem 0;
+  }
+
+  .grid-3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .card-title {
+    margin-bottom: 3rem;
+  }
+
+  .card-btn {
+    margin-top: 1.8rem;
+  }
+}
